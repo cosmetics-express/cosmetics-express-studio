@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>הפעלת הדמו — Cosmetics Express Studio</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 36px 22px;
+        background: #f5f7ef;
+        color: #304e3d;
+        font:
+          16px/1.9 Arial,
+          sans-serif;
+      }
+      main {
+        max-width: 760px;
+        margin: auto;
+        background: #fff;
+        border: 1px solid #dfe6d6;
+        border-radius: 18px;
+        padding: 30px;
+      }
+      h1 {
+        font-size: 28px;
+        line-height: 1.4;
+      }
+      h2 {
+        font-size: 20px;
+        margin-top: 30px;
+      }
+      li {
+        margin-bottom: 15px;
+      }
+      a {
+        color: #526d3d;
+      }
+      code {
+        direction: ltr;
+        display: inline-block;
+        padding: 2px 7px;
+        background: #eef2e6;
+        border-radius: 4px;
+      }
+      .note {
+        padding: 18px;
+        background: #eef3e5;
+        border-radius: 10px;
+        margin-top: 25px;
+      }
+      pre {
+        direction: ltr;
+        text-align: left;
+        padding: 15px;
+        background: #f0f3eb;
+        overflow: auto;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <small dir="ltr">COSMETICS EXPRESS STUDIO</small>
+      <h1>נכנסים לסטודיו שלך.<br />בלי דומיין ובלי רכישת אחסון.</h1>
+      <p>
+        החבילה מכילה את המערכת ואת קובצי ההפעלה. היא פועלת במחשב שלך ושומרת בו את הקמפיינים והלידים.
+        את החלון הזה אפשר לפתוח גם לפני התקנת המערכת — הוא מדריך בלבד.
+      </p>
+      <ol>
+        <li>חלצו את קובץ ה־ZIP לתיקייה רגילה. אין להפעיל מתוך קובץ ה־ZIP.</li>
+        <li>
+          התקינו
+          <a href="https://nodejs.org/en/download" target="_blank" rel="noreferrer"
+            >Node.js בגרסת 24 LTS</a
+          >, עם npm. אם כבר מותקנת גרסה 24, אין צורך להתקין שוב.
+        </li>
+        <li>
+          <strong>Windows:</strong> פתחו את <code>start-demo.cmd</code>.<br /><strong>Mac:</strong>
+          פתחו את <code>start-demo.command</code>. אם הרשאות ההפעלה מונעות פתיחה, פתחו Terminal
+          בתיקייה והריצו <code>bash start-demo.command</code>.<br />אפשר גם לפתוח Terminal בתיקייה
+          ולהריץ <code>npm run demo</code> בכל מערכת הפעלה.
+        </li>
+        <li>
+          בהפעלה הראשונה הרכיבים יותקנו מהאינטרנט. המתינו להודעה ״הדמו מוכן לשימוש״. אין צורך בכרטיס
+          אשראי, בשרת או במפתחות API.
+        </li>
+        <li>
+          הדפדפן ייפתח אוטומטית. אם לא נפתח, היכנסו ל־<a href="http://localhost:3000/login"
+            >http://localhost:3000/login</a
+          >
+          <strong>באותו מחשב שבו הפעלתם את הקבצים</strong>.
+        </li>
+        <li>
+          לחצו <strong>״כניסה לסטודיו לדוגמה״</strong>. אפשר ליצור קמפיין, לערוך טקסט ומחיר, להוריד
+          עיצוב ולבדוק דף נחיתה ולידים.
+        </li>
+      </ol>
+      <div class="note">
+        <strong>מה יש בדמו?</strong> חשבון לדוגמה, קמפיינים ולידים לדוגמה, עורך בעברית ומכסה של 30
+        קרדיטי הדגמה. יצירה משתמשת באיור לדוגמה ולא ב־AI אמיתי. אין חיוב ואין סליקה. דפי הנחיתה
+        פועלים מקומית בלבד, ואינם מתפרסמים לאינטרנט.
+      </div>
+      <h2>כניסה ידנית</h2>
+      <p>
+        אימייל: <code>hello@demo.studio</code><br />סיסמה: <code>StudioDemo2026!</code><br />זהו
+        חשבון הדגמה מוכר עם גישת מנהל. אפשר גם ליצור חשבון מקומי נפרד.
+      </p>
+      <h2>סגירה והפעלה מחדש</h2>
+      <p>
+        השאירו את חלון ההפעלה פתוח בזמן השימוש. לסיום לחצו בו <code>Ctrl+C</code>. להפעלה נוספת פתחו
+        שוב את אותו קובץ. המידע נשמר בתיקיית <code>.data</code>; אל תמחקו אותה אם רוצים לשמור את
+        העבודה.
+      </p>
+      <h2>אם פורט 3000 תפוס</h2>
+      <p>סגרו חלון קודם של הדמו, או פתחו Terminal בתיקיית המערכת והריצו:</p>
+      <pre>npm run demo -- --port 3001</pre>
+      <p>לאחר ההפעלה אפשר לגלוש ל־<code>http://localhost:3001/login</code>.</p>
+      <h2>אם יש לך cPanel</h2>
+      <p>
+        cPanel הוא לוח ניהול. כדי להריץ את המערכת הזו צריך שבחבילת האחסון תהיה תמיכה ב־Node.js 24,
+        בהרצה מתמשכת ובקבצים מקומיים שנשמרים. חפשו ״Setup Node.js App״ או ״Application Manager״
+        ובדקו אילו גרסאות קיימות. אם יש רק אחסון PHP/WordPress, העלאת ה־ZIP לבדה לא תפעיל את המערכת.
+      </p>
+      <p>
+        אפשר להשתמש בכתובת זמנית של חברת האחסון, אם היא מספקת כזו, בלי לקנות דומיין חדש. נדרשת התאמת
+        הגדרות לפריסה; קובצי ההפעלה כאן מיועדים למחשב המקומי. הוראות כלליות ודרישות שירותי הייצור
+        נמצאות ב־<code>README.md</code>.
+      </p>
+    </main>
+  </body>
+</html>

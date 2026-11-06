@@ -1,0 +1,10 @@
+.next/
+.data/
+.env*
+node_modules/
+test-results/
+playwright-report/
+package-lock.json
+public/art/
+supabase/
+next-env.d.ts
